@@ -1,4 +1,4 @@
-<!-- Creating a MySQL database in PHP -->
+<!-- Creating a MySQL Table in PHP -->
 
 <!-- First we connect to the database -->
 <!doctype html>
@@ -36,7 +36,7 @@
          </div>';
     }
     // Creating a table in the database
-    $sql = "CREATE TABLE `phpdata` ( `sno` INT(6) NOT NULL AUTO_INCREMENT ,  `Name` VARCHAR(15) NOT NULL ,  `Age` YEAR(2) NOT NULL ,  `Eamil` VARCHAR(20) NOT NULL ,  `mobileno` INT(12) NOT NULL ,    PRIMARY KEY  (`sno`))";
+    $sql = "CREATE TABLE `phpdata` ( `sno` INT(6) NOT NULL AUTO_INCREMENT ,  `Name` VARCHAR(15) NOT NULL ,  `Age` YEAR(2) NOT NULL ,  `Email` VARCHAR(40) NOT NULL ,  `mobileno` VARCHAR(15) NOT NULL ,    PRIMARY KEY  (`sno`))";
     $result = mysqli_query($conn, $sql);
 
     // Check for the table creation success
