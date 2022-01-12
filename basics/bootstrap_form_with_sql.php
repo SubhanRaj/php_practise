@@ -67,8 +67,6 @@
         $email = $_POST['email'];
         $concern = $_POST['concern'];
     }
-
-    // Connecting to the database
     // Connecting to the Database
 
     $servername = "localhost";
