@@ -36,7 +36,7 @@
     }
     // Creating a database
     // We will use SQL Query to create a database
-    $sql = "DROP Database php_practise1";
+    $sql = "CREATE Database php_practise";
     mysqli_query($conn, $sql);
 
 
@@ -46,9 +46,10 @@
     // Check for the database creation success
     if ($result) {
         echo "The Database creation is sucessful";
+    } else {
+
+        echo "The Database was not created sucessfully because of this error ---> ".mysqli_error($conn);
     }
-    echo "<h4>The Result is: </h4>";
-    echo var_dump($result);
 
     ?>
 
